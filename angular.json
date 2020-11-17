@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "covid19"
+    }
+  },
+  "defaultProject": "covid19",
+  "cli": {
+    "analytics": "de8da0fb-7f4d-45a1-87e2-e56a74a3aa56"
+  }
 }
