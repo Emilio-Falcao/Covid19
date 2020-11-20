@@ -1,0 +1,69 @@
+<div class="flex-container">
+
+
+
+  <div class="row">
+    <div class="section col s4">
+      <ul class="listaEstados">
+        <li *ngFor="let lista of  DetalhesEstado" (click)="onSelect(lista)" [class.selected]="lista===listaClicada">
+
+          <span class="badge" >{{lista.estado}} Clique na cidade para ver Cidades do Estado</span>
+          <table>
+            <tr>
+              <th>Ativos </th>
+              <th>Confirmados </th>
+              <th>Mortes</th>
+              <th>Recuperados</th>
+              <th>Gastos R$</th>
+              <th>Quant Dias Lockdown</th>
+              <th>Leitos Ocupados</th>
+            </tr>
+            <tr>
+              <td>{{lista.ativos}}</td>
+              <td>{{lista.confirmados}}</td>
+              <td>{{lista.mortes}}</td>
+              <td>{{lista.recuperados}}</td>
+              <td>{{lista.gastos}}</td>
+              <td>{{lista.lockdown}}</td>
+              <td>{{lista.leitosocupados}}</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="container" *ngIf="listaClicada" class="details">
+    <h2>{{listaClicada.estado}}</h2>
+    <ul class="list-group">
+
+      <li class="list-group-item" *ngFor=" let a of listaClicada.dados">
+      <table>
+        <tr>
+          <th>Cidade </th>
+          <th>Ativos </th>
+          <th>Confirmados </th>
+          <th>Mortes</th>
+          <th>Recuperados</th>
+          <th>Gastos R$</th>
+          <th>Quant Dias Lockdown</th>
+          <th>Leitos Ocupados</th>
+        </tr>
+        <tr>
+          <td>{{a.cidade}}</td>
+          <td>{{a.ativos}}</td>
+          <td>{{a.confirmados}}</td>
+          <td>{{a.mortes}}</td>
+          <td>{{a.recuperados}}</td>
+          <td>{{a.gastos}}</td>
+          <td>{{a.lockdown}}</td>
+          <td>{{a.leitosocupados}}</td>
+        </tr>
+      </table>
+       </li>
+
+
+    </ul>
+  </div>
+
