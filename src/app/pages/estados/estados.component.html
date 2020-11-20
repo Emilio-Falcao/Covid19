@@ -1,8 +1,12 @@
+<app-menu></app-menu>
+
 <div class="flex-container">
 
 
 
+
   <div class="row">
+
     <div class="section col s4">
       <ul class="listaEstados">
         <li *ngFor="let lista of  DetalhesEstado" (click)="onSelect(lista)" [class.selected]="lista===listaClicada">

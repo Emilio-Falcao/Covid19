@@ -8,31 +8,17 @@ li{
     color:black;
     background:white
 }
-.title{
-font-weight: bold;
 
-}
 .container{
     display:flex;
     flex-direction: column;
     align-items: center;
     height:100%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 
-}.listaMusicas{
-    margin:1rem 0;
-
-
-}.listaMusicas li{
-    margin:0.4rem 0;
-    border-bottom: 1px solid rgba(0, 0,0, 0.2);
-    padding:0.2rem;
-    cursor: pointer;
 }
 
-.listaMusicas li:hover{
-  color:rgba(0, 0,0, 0.6);
-}
+
 
 table {
     font-family: arial, sans-serif;
@@ -49,26 +35,17 @@ table {
 
   tr:nth-child(even) {
     background-color: #dddddd;
-  }.btn{
-     float:right;
-     color:black;
-     background:white;
-     padding:0.3em;
-     border:none;
-     border-radius: 0.4em;
-     cursor: pointer;
-     letter-spacing: 0.3px;
   }
 
   .flex-container {
     display: flex;
-    background-color: black;
+    background-color:write;
   }
 
   .flex-container > div {
-    background-color:black;
-    margin: 20px;
-    padding: 20px;
+    background-color:write;
+    margin: 5px;
+    padding: 5px;
     font-size: 12px;
     text-decoration-color: aqua;
 

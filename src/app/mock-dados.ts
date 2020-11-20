@@ -13,16 +13,7 @@ export const Dados : Estado[]=[
     gastos:'15.000,00',
       lockdown:'35',
     leitosocupados:'60',
-    dadosCidade:[{
-      confirmados:'16.650.000',
-        mortes:'9.848',
-        recuperados: '10435',
-        ativos:'545.652',
-        gastos:'158.582.744,15',
-        lockdown:'35',
-        leitosocupados:'60',
-    }
-  ],
+    dadosCidade:[],
     foto:'../../../assets/images/coronavirus.jpg',
     //Inicio do Vetor de Ciadades do estado do CE
     dados:[
@@ -61,7 +52,8 @@ export const Dados : Estado[]=[
          }
     ]
   },
-  //////Final do Estado do Bahiae suas cidades
+  //////Final do Estado doCeara e suas cidades
+  ////Inicio Bahia
   {
     estado:"Bahia",
     confirmados:'130.000',
@@ -71,18 +63,10 @@ export const Dados : Estado[]=[
     gastos:'15.000,00',
       lockdown:'35',
     leitosocupados:'60',
-    dadosCidade:[{
-      confirmados:'16.650.000',
-        mortes:'9.848',
-        recuperados: '10435',
-        ativos:'545.652',
-        gastos:'158.582.744,15',
-        lockdown:'35',
-        leitosocupados:'60',
-    }
-  ],
+    dadosCidade:[ ],
     foto:'../../../assets/images/coronavirus.jpg',
-    //Inicio do Vetor de Ciadades do estado do CE
+
+    //Inicio do Vetor de Ciadades do estado do Bahia
     dados:[
       {
         cidade:'Salvador',
@@ -119,4 +103,6 @@ export const Dados : Estado[]=[
          }
     ]
   }
+
+  
 ]
