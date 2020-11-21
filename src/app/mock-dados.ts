@@ -575,7 +575,7 @@ export const Dados : Estado[]=[
         leitosocupados:'60',
     }
   ],
-    foto:'../../../assets/images/PA.png',
+    foto:'../../../assets/images/PARA.png',
     //Inicio do Vetor de Ciadades do estado do CE
     dados:[
       {
