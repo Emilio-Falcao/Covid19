@@ -14,7 +14,7 @@ export const Dados : Estado[]=[
       lockdown:'35',
     leitosocupados:'60',
     dadosCidade:[],
-    foto:'../../../assets/images/coronavirus.jpg',
+    foto:'../../../assets/images/bandeiraCe.jpg',
     //Inicio do Vetor de Ciadades do estado do CE
     dados:[
       {
@@ -64,7 +64,7 @@ export const Dados : Estado[]=[
       lockdown:'35',
     leitosocupados:'60',
     dadosCidade:[ ],
-    foto:'../../../assets/images/coronavirus.jpg',
+    foto:'../../../assets/images/bandeirabahia.jpg',
 
     //Inicio do Vetor de Ciadades do estado do Bahia
     dados:[
@@ -104,5 +104,5 @@ export const Dados : Estado[]=[
     ]
   }
 
-  
+
 ]

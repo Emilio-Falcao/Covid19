@@ -1,1 +1,88 @@
 <app-menu></app-menu>
+
+<div class="container py-3">
+
+  <div *ngIf="mundo">
+    <div class="row table-dark m-2 round text-center">
+      <h2 class="text-white mx-auto ">COVID-19 </h2>
+      <h3 class="text-white mx-auto"> Estrutura de Dados </h3>
+      <p class="mx-auto"> Atualizado em {{(mundo.updated | date : 'dd/MM/yy HH:mm')}} </p>
+    </div>
+
+    <!-- Formacoes Gerais-->
+    <div class="row ">
+      <div class="col-md-12">
+        <div class="card-counter info">
+          <i class="fa fa-users fa-3x"></i>
+          <span class="count-numbers">{{mundo.cases}}</span>
+          <span class="count-name">TOTAL DE CASOS MUNDO</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-counter bg-secondary">
+          <i class="fas fa-user-injured fa-3x"></i>
+          <span class="count-numbers">{{mundo.recovered}}</span>
+          <span class="count-name">Recuperados</span>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-counter danger">
+          <i class="fa fa-database"></i>
+          <span class="count-numbers">{{mundo.deaths}}</span>
+          <span class="count-name">Mortes</span>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-counter primary">
+          <i class="far fa-flag"></i>
+          <span class="count-numbers">{{mundo.affectedCountries}}</span>
+          <span class="count-name">Países afetados </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formacoes Especificas Pais-->
+  <div *ngIf="pais">
+    <div class="row table-dark m-2 round">
+      <h2 class="text-white"> {{pais.country}} </h2>
+    </div>
+
+    <div class="row py-2">
+
+      <div class="col-md-3 text-center align-content-lg-center">
+        <img (click)="trocaPais()" [src]="pais.countryInfo.flag" class="img img-thumbnail">
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-counter info">
+          <i class="fa fa-users fa-3x"></i>
+          <span class="count-numbers">{{pais.cases}}</span>
+          <span class="count-name">TOTAL DE CASOS</span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card-counter bg-secondary">
+          <i class="fas fa-user-injured fa-3x"></i>
+          <span class="count-numbers">{{pais.recovered}}</span>
+          <span class="count-name">Recuperados</span>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-counter danger">
+          <i class="fa fa-database"></i>
+          <span class="count-numbers">{{pais.deaths}}</span>
+          <span class="count-name">Mortes</span>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+</div>
