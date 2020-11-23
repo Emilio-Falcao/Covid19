@@ -4,8 +4,8 @@
 
   <div *ngIf="mundo">
     <div class="row table-dark m-2 round text-center">
-      <h2 class="text-white mx-auto ">COVID-19  </h2>
-      <h3 class="text-white mx-auto"> Estrutura de Dados </h3>
+      <h2 class="text-white mx-auto "> </h2>
+      <h3 class="text-white mx-auto"> DADOS DO COVID NO MUNDO </h3>
       <p class="mx-auto"> Atualizado em {{(mundo.updated | date : 'dd/MM/yy HH:mm')}} </p>
     </div>
 
@@ -87,17 +87,20 @@
       </div>
     </div>
 
-  <!-- informacoes Especificas Pais-->
+<h3>Situação do Covid por País</h3>
+
   <div *ngIf="pais">
     <div class="row table-dark ">
-      <h2 class="text-white"> {{pais.country}} </h2>
+      <h2 class="text-black"> {{pais.country}} </h2>
     </div>
 
     <div class="row py-2">
 
       <div class="col-md-3 text-center align-content-lg-center">
         <img (click)="trocaPais()" [src]="pais.countryInfo.flag" class="img img-thumbnail">
+        <span>Click da Bandeira para Trocar de País</span>
       </div>
+
 
       <div class="col-md-3">
         <div class="card-counter ">
