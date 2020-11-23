@@ -17,10 +17,11 @@ export class HomeComponent implements OnInit {
      async ngOnInit(){
    this.mundo = await this.apiService.getInfoMundo();
    this.pais = await this.apiService.getInfoPais();
+
   }
   async trocaPais(){
     const { value: inputPais } = await Swal.fire({
-      title: 'Informe um País:*',
+      title: 'Informe um País',
       input: 'text',
       inputPlaceholder: 'País'
     })
@@ -28,4 +29,5 @@ export class HomeComponent implements OnInit {
       this.pais = await this.apiService.getInfoPais(inputPais)
     }
   }
+
 }

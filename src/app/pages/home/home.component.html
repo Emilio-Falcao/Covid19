@@ -4,12 +4,12 @@
 
   <div *ngIf="mundo">
     <div class="row table-dark m-2 round text-center">
-      <h2 class="text-white mx-auto ">COVID-19 </h2>
+      <h2 class="text-white mx-auto ">COVID-19  </h2>
       <h3 class="text-white mx-auto"> Estrutura de Dados </h3>
       <p class="mx-auto"> Atualizado em {{(mundo.updated | date : 'dd/MM/yy HH:mm')}} </p>
     </div>
 
-    <!-- Formacoes Gerais-->
+
     <div class="row ">
       <div class="col-md-12">
         <div class="card-counter ">
@@ -18,7 +18,36 @@
           <span class="count-name">TOTAL DE CASOS MUNDO</span>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-12">
+        <div class="card-counter ">
+          <i class="fa fa-users fa-3x"></i>
+          <span class="count-numbers">{{mundo.active}}</span>
+          <span class="count-name">CASOS NO MUNDO ATIVOS</span>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="card-counter ">
+          <i class="fa fa-users fa-3x"></i>
+          <span class="count-numbers">{{mundo.casesPerOneMillion}}</span>
+          <span class="count-name">CASOS POR MILHÃO DE HAB</span>
+        </div>
+      </div>
+
+        <div class="col-md-12">
+          <div class="card-counter ">
+            <i class="fa fa-users fa-3x"></i>
+            <span class="count-numbers">{{mundo.deathsPerOneMillion}}</span>
+            <span class="count-name">MORTES POR MILHÃO DE HAB</span>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="card-counter ">
+            <i class="fas fa-user-injured fa-3x"></i>
+            <span class="count-numbers">{{mundo.tests}}</span>
+            <span class="count-name">Testados</span>
+          </div>
+      <div class="col-md-12">
         <div class="card-counter ">
           <i class="fas fa-user-injured fa-3x"></i>
           <span class="count-numbers">{{mundo.recovered}}</span>
@@ -26,7 +55,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-12">
         <div class="card-counter ">
           <i class="fa fa-database"></i>
           <span class="count-numbers">{{mundo.deaths}}</span>
@@ -34,7 +63,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-12">
         <div class="card-counter ">
           <i class="far fa-flag"></i>
           <span class="count-numbers">{{mundo.affectedCountries}}</span>
@@ -43,10 +72,24 @@
       </div>
     </div>
   </div>
+  <div class="col-md-12">
+    <div class="card-counter ">
+      <i class="fa fa-database"></i>
+      <span class="count-numbers">{{mundo.todayRecovered}}</span>
+      <span class="count-name">Recuperados Do Dia</span>
+    </div>
+  </div>
+    <div class="col-md-12">
+      <div class="card-counter ">
+        <i class="fa fa-database"></i>
+        <span class="count-numbers">{{mundo.todayDeaths}}</span>
+        <span class="count-name">Mortos Do Dia</span>
+      </div>
+    </div>
 
   <!-- Formacoes Especificas Pais-->
   <div *ngIf="pais">
-    <div class="row table-dark m-2 round">
+    <div class="row table-dark ">
       <h2 class="text-white"> {{pais.country}} </h2>
     </div>
 
@@ -78,8 +121,27 @@
           <span class="count-name">Mortes</span>
         </div>
       </div>
-
-
+<div class="col-md-3">
+  <div class="card-counter ">
+    <i class="fa fa-database"></i>
+    <span class="count-numbers">{{pais.deathsPerOneMillion}}</span>
+    <span class="count-name">Mortes Por  Milhão</span>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="card-counter ">
+    <i class="fa fa-database"></i>
+    <span class="count-numbers">{{pais.casesPerOneMillion}}</span>
+    <span class="count-name">Casos Por Milhão</span>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="card-counter ">
+    <i class="fa fa-database"></i>
+    <span class="count-numbers">{{pais.deathsPerOneMillion}}</span>
+    <span class="count-name">Mortes Por Milhão</span>
+  </div>
+</div>
     </div>
   </div>
 

@@ -11,7 +11,7 @@
       <ul class="listaEstados">
         <li *ngFor="let lista of  DetalhesEstado" (click)="onSelect(lista)" [class.selected]="lista===listaClicada">
 
-          <span class="badge" ><img [src]="lista.foto" alt="100" width="100">{{lista.estado}} Clique na cidade para ver Cidades do Estado</span>
+          <span class="badge" ><img [src]="lista.foto" alt="100" width="100">{{lista.estado}} Clique na bandeira para ver Cidades do Estado</span>
           <table>
             <tr>
               <th>Ativos </th>

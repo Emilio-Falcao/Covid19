@@ -12,6 +12,7 @@ export class CovidapiService {
   constructor(private http: HttpClient) { }
 
     async getInfoMundo() {
+
     return await this.http.get<Mundo>(`${this.url}/all`)
     .toPromise()
     .then(mundo => {return mundo});
@@ -21,5 +22,9 @@ export class CovidapiService {
     return this.http.get<Pais>(`${this.url}/countries/${pais}`)
     .toPromise()
     .then(pais => {return pais})
+
   }
+getinfo(){
+   console.log(this.getInfoMundo);
+}
 }
