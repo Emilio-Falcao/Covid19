@@ -13,21 +13,21 @@
     <div class="row ">
       <div class="col-md-12">
         <div class="card-counter ">
-          <i class="fa fa-users fa-3x"></i>
+          <i class=""></i>
           <span class="count-numbers">{{mundo.cases}}</span>
           <span class="count-name">TOTAL DE CASOS MUNDO</span>
         </div>
       </div>
       <div class="col-md-12">
         <div class="card-counter ">
-          <i class="fa fa-users fa-3x"></i>
+          <i class=""></i>
           <span class="count-numbers">{{mundo.active}}</span>
           <span class="count-name">CASOS NO MUNDO ATIVOS</span>
         </div>
       </div>
       <div class="col-md-12">
         <div class="card-counter ">
-          <i class="fa fa-users fa-3x"></i>
+          <i class=""></i>
           <span class="count-numbers">{{mundo.casesPerOneMillion}}</span>
           <span class="count-name">CASOS POR MILHÃO DE HAB</span>
         </div>
@@ -35,7 +35,7 @@
 
         <div class="col-md-12">
           <div class="card-counter ">
-            <i class="fa fa-users fa-3x"></i>
+            <i class=""></i>
             <span class="count-numbers">{{mundo.deathsPerOneMillion}}</span>
             <span class="count-name">MORTES POR MILHÃO DE HAB</span>
           </div>
@@ -43,51 +43,51 @@
 
         <div class="col-md-12">
           <div class="card-counter ">
-            <i class="fas fa-user-injured fa-3x"></i>
+            <i class=""></i>
             <span class="count-numbers">{{mundo.tests}}</span>
-            <span class="count-name">Testados</span>
+            <span class="count-name">TESTADOS</span>
           </div>
       <div class="col-md-12">
         <div class="card-counter ">
-          <i class="fas fa-user-injured fa-3x"></i>
+          <i class=""></i>
           <span class="count-numbers">{{mundo.recovered}}</span>
-          <span class="count-name">Recuperados</span>
+          <span class="count-name">RECUPERADOS</span>
         </div>
       </div>
 
       <div class="col-md-12">
         <div class="card-counter ">
-          <i class="fa fa-database"></i>
+          <i class=""></i>
           <span class="count-numbers">{{mundo.deaths}}</span>
-          <span class="count-name">Mortes</span>
+          <span class="count-name">MORTES</span>
         </div>
       </div>
 
       <div class="col-md-12">
         <div class="card-counter ">
-          <i class="far fa-flag"></i>
+          <i class=""></i>
           <span class="count-numbers">{{mundo.affectedCountries}}</span>
-          <span class="count-name">Países afetados </span>
+          <span class="count-name">PAÍSES AFETADOS</span>
         </div>
       </div>
     </div>
   </div>
   <div class="col-md-12">
     <div class="card-counter ">
-      <i class="fa fa-database"></i>
+      <i class=""></i>
       <span class="count-numbers">{{mundo.todayRecovered}}</span>
-      <span class="count-name">Recuperados Do Dia</span>
+      <span class="count-name">RECUPERADOS DIA</span>
     </div>
   </div>
     <div class="col-md-12">
       <div class="card-counter ">
-        <i class="fa fa-database"></i>
+        <i class=""></i>
         <span class="count-numbers">{{mundo.todayDeaths}}</span>
-        <span class="count-name">Mortos Do Dia</span>
+        <span class="count-name">MORTOS DIA</span>
       </div>
     </div>
 
-  <!-- Formacoes Especificas Pais-->
+  <!-- informacoes Especificas Pais-->
   <div *ngIf="pais">
     <div class="row table-dark ">
       <h2 class="text-white"> {{pais.country}} </h2>
@@ -101,14 +101,14 @@
 
       <div class="col-md-3">
         <div class="card-counter ">
-          <i class="fa fa-users fa-3x"></i>
+          <i class=""></i>
           <span class="count-numbers">{{pais.cases}}</span>
           <span class="count-name">TOTAL DE CASOS</span>
         </div>
       </div>
       <div class="col-md-3">
         <div class="card-counter ">
-          <i class="fas fa-user-injured fa-3x"></i>
+          <i class=""></i>
           <span class="count-numbers">{{pais.recovered}}</span>
           <span class="count-name">Recuperados</span>
         </div>
@@ -116,30 +116,30 @@
 
       <div class="col-md-3">
         <div class="card-counter ">
-          <i class="fa fa-database"></i>
+          <i class=""></i>
           <span class="count-numbers">{{pais.deaths}}</span>
           <span class="count-name">Mortes</span>
         </div>
       </div>
 <div class="col-md-3">
   <div class="card-counter ">
-    <i class="fa fa-database"></i>
+    <i class=""></i>
     <span class="count-numbers">{{pais.deathsPerOneMillion}}</span>
     <span class="count-name">Mortes Por  Milhão</span>
   </div>
 </div>
 <div class="col-md-3">
   <div class="card-counter ">
-    <i class="fa fa-database"></i>
+    <i class=""></i>
     <span class="count-numbers">{{pais.casesPerOneMillion}}</span>
     <span class="count-name">Casos Por Milhão</span>
   </div>
 </div>
 <div class="col-md-3">
   <div class="card-counter ">
-    <i class="fa fa-database"></i>
-    <span class="count-numbers">{{pais.deathsPerOneMillion}}</span>
-    <span class="count-name">Mortes Por Milhão</span>
+    <i class=""></i>
+    <span class="count-numbers">{{pais.todayDeaths}}</span>
+    <span class="count-name">Mortes no Dia</span>
   </div>
 </div>
     </div>
