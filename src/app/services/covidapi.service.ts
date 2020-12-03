@@ -24,7 +24,5 @@ export class CovidapiService {
     .then(pais => {return pais})
 
   }
-getinfo(){
-   console.log(this.getInfoMundo);
-}
+
 }
