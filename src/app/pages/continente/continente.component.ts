@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Continente } from 'src/app/continente';
+import { DadosCont } from 'src/mock-cont';
 
 @Component({
   selector: 'app-continente',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContinenteComponent implements OnInit {
 
+  DetalhesContinente=DadosCont;
+
+ 
+
+  
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+ 
 
 }

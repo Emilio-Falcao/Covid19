@@ -1,1 +1,35 @@
-<p>continente works!</p>
+<app-menu></app-menu>
+
+
+<div class="flex-container">
+  <div class="row">
+    <div class="section col s4">
+      <ul class="listaContinentes">
+        <li *ngFor = "let lista of  DetalhesContinente">
+          <table>
+            <tr>
+              <th>Continente</th>
+              <th>Ativos </th>
+              <th>Confirmados </th>
+              <th>Mortes</th>
+              <th>Recuperados</th>
+              <th>Gastos R$</th>
+              <th>Quant Dias Lockdown</th>
+              <th>Leitos Ocupados</th>
+            </tr>
+            <tr>
+              <td>{{lista.continente}}</td>
+              <td>{{lista.ativos}}</td>
+              <td>{{lista.confirmados}}</td>
+              <td>{{lista.mortes}}</td>
+              <td>{{lista.recuperados}}</td>
+              <td>{{lista.gastos}}</td>
+              <td>{{lista.lockdown}}</td>
+              <td>{{lista.leitosocupados}}</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
